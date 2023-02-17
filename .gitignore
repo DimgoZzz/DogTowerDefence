@@ -1,0 +1,10 @@
+
+.sconsign.dblite
+
+.vscode/
+
+*.obj
+
+project/bin/summator/*.dll
+project/bin/summator/*.exp
+project/bin/summator/*.lib
