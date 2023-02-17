@@ -18,7 +18,7 @@ sources = Glob("dtd_dll/src/*.cpp")
 
 if env["platform"] == "windows":
     library = env.SharedLibrary(
-        "dtd_project/bin/dtd_dll/libgd-dtd_dll-framework{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        "dtd_project/bin/dtd_dll/libgd-dtd_dll{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources
     )
 
