@@ -13,12 +13,12 @@ env = SConscript("godot-cpp/SConstruct")
 # - LINKFLAGS are for linking flags
 
 # tweak this if you want to use different folders, or more folders, to store your source code in.
-env.Append(CPPPATH=["extension/src/"])
-sources = Glob("extension/src/*.cpp")
+env.Append(CPPPATH=["dtd_dll/src/"])
+sources = Glob("dtd_dll/src/*.cpp")
 
 if env["platform"] == "windows":
     library = env.SharedLibrary(
-        "project/bin/summator/libgdsummator{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        "dtd_project/bin/dtd_dll/libgd-dtd_dll-framework{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources
     )
 

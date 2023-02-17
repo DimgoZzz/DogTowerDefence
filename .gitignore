@@ -5,6 +5,6 @@
 
 *.obj
 
-project/bin/summator/*.dll
-project/bin/summator/*.exp
-project/bin/summator/*.lib
+*.dll
+*.exp
+*.lib
