@@ -1,3 +1,1 @@
 #define GDCLASS
-
-#define D_CLASS_NOCOPY

@@ -105,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\godot-cpp\gen\include;$(SolutionDir)..\godot-cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\godot-cpp\gen\include\;$(SolutionDir)..\godot-cpp\\gdextension\;$(SolutionDir)..\godot-cpp\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,7 +120,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\godot-cpp\gen\include;$(SolutionDir)..\godot-cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\godot-cpp\gen\include\;$(SolutionDir)..\godot-cpp\\gdextension\;$(SolutionDir)..\godot-cpp\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,12 +130,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\MyResource.cpp" />
     <ClCompile Include="src\register_types.cpp" />
     <ClCompile Include="src\summator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\MyResource.h" />
     <ClInclude Include="src\register_types.h" />
     <ClInclude Include="src\summator.h" />
   </ItemGroup>
